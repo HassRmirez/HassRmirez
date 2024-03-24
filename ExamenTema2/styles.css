@@ -1,0 +1,260 @@
+/* Estilos para el cuerpo y encabezado */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para la sección principal */
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.data-table {
+    border-collapse: collapse;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Estilos para la barra lateral */
+aside {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+aside a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para el reloj */
+#clock {
+    font-size: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos adicionales */
+/* Estilos para la sección de imágenes */
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 500px; /* Ancho fijo para las imágenes */
+    height: auto;
+    margin-bottom: 90px;
+}
+
+.image-description {
+    margin-top: 10px;
+}
+/* Estilos para resaltar imágenes al pasar el cursor */
+.image-container img:hover {
+    filter: brightness(100%); /* Aumenta el brillo */
+    transition: filter 0.3s ease; /* Transición suave */
+}
+/* Estilos para resaltar imágenes al pasar el cursor */
+.image-container img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en un 5% */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+/* Estilos para la descripción de imágenes */
+.image-description {
+    display: none; /* Oculta la descripción por defecto */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: #fff; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 14; /* Alinear con el borde inferior */
+    left: 0; /* Alinear con el borde izquierdo */
+    right: 0; /* Alinear con el borde derecho */
+    transition: opacity 0.3s ease; /* Transición de opacidad suave */
+}
+
+.image-container:hover .image-description {
+    display: block; /* Muestra la descripción al pasar el cursor */
+}
+
+
+
+.additional-cars {
+    margin-top: 50px;
+}
+
+.additional-cars h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.additional-cars-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+.additional-cars-table th, .additional-cars-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.additional-cars-table th {
+    background-color: #f2f2f2;
+}
+
+.additional-cars-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.additional-cars-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.additional-cars-table img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+.additional-cars-table img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Agregar transiciones suaves */
+}
+
+.additional-cars-table img:hover {
+    transform: scale(3); /* Aumentar tamaño al pasar el cursor */
+    filter: brightness(110%); /* Aumentar brillo al pasar el cursor */
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
+
+
+/* Estilos para el formulario */
+.form-container {
+    width: 50%;
+    margin: 20px auto; /* Posicionar el formulario unas líneas abajo */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 16px); /* Ajustar el ancho para incluir el padding */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

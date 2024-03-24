@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección de Carros Antiguos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<!----> 
+
+<body>
+    <header>
+        <h1>Colección de Carros Antiguos</h1>
+    </header>
+    <section>
+      
+         <div class="images">
+            <div class="image-container">
+                <img src="imagen1.jpg" alt="Carro antiguo 1">
+                <div class="image-description">El Ford Mustang de 1965, 
+                    a menudo conocido como el "Mustang '65", es un automóvil 
+                    deportivo legendario fabricado por Ford Motor Company. Fue 
+                    presentado al público el 17 de abril de 1964 en la Feria Mundial 
+                    de Nueva York y rápidamente se convirtió en un ícono de la 
+                                cultura automotriz estadounidense.</div>
+            </div>
+            <div class="image-container">
+                <img src="imagen2.jpg" alt="Carro antiguo 2">
+                <div class="image-description">La Chevrolet C10 de 1965
+                     es una camioneta pickup clásica fabricada por General
+                    Motors bajo la marca Chevrolet. La serie C de camionetas 
+                      de Chevrolet, que incluía la C10, era una línea de 
+                        vehículos robustos y confiables diseñados para una 
+                        variedad de usos, desde el trabajo duro hasta el 
+                                    transporte diario.</div>
+            </div>
+            <div class="image-container">
+                <img src="imagen3.jpg" alt="Carro antiguo 3">
+                <div class="image-description">El Dodge Challenger de 1970
+                     es un automóvil deportivo legendario fabricado por 
+                           Dodge, una división de Chrysler Corporation 
+                       (ahora parte de Stellantis). Presentado como parte 
+                     de la "era dorada" de los muscle cars estadounidenses, 
+                         el Challenger de 1970 es uno de los modelos más 
+                           icónicos y buscados por los entusiastas 
+                                       del automóvil.</div>
+            </div>
+        </div>
+        
+
+        <div class="additional-cars">
+            <h2>Otros Autos Antiguos</h2>
+            <table class="additional-cars-table">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí puedes agregar más filas según necesites -->
+                    <tr>
+                        <td>Ford Model T</td>
+                        <td>El Ford Model T, también conocido como "Tin Lizzie", es uno de los autos más influyentes de la historia del automóvil. Fue producido por Ford Motor Company entre 1908 y 1927.</td>
+                        <td><img src="model_t.jpg" alt="Ford Model T"></td>
+                        <td>1908</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet Bel Air</td>
+                        <td>El Chevrolet Bel Air es un automóvil icónico de la década de 1950 producido por Chevrolet. Es conocido por su estilo distintivo y su papel en la cultura automotriz estadounidense.</td>
+                        <td><img src="bel_air.jpg" alt="Chevrolet Bel Air"></td>
+                        <td>1957</td>
+                    </tr>
+                    <tr>
+                        <td>Chevrolet Chevelle SS</td>
+                        <td>El Chevrolet Chevelle SS de 1970 es un clásico muscle car estadounidense que forma parte de la segunda generación del Chevelle. Es conocido por su estilo agresivo y potente motor.</td>
+                        <td><img src="chevelle_ss.jpg" alt="Chevrolet Chevelle SS"></td>
+                        <td>1970</td>
+                    </tr>
+                    <tr>
+                        <td>Porsche 911</td>
+                        <td>El Porsche 911 de 1970 es un icónico automóvil deportivo fabricado por la marca alemana Porsche. Es famoso por su diseño distintivo y su excepcional rendimiento en carretera.</td>
+                        <td><img src="porsche_911.jpg" alt="Porsche 911"></td>
+                        <td>1970</td>
+                    </tr>
+                    <tr>
+                        <td>Dodge Coronet</td>
+                        <td>El Dodge Coronet de 1949 es un clásico automóvil de la marca Dodge. Fue introducido después de la Segunda Guerra Mundial y se destacó por su diseño elegante y su rendimiento confiable.</td>
+                        <td><img src="dodge_coronet.jpg" alt="Dodge Coronet"></td>
+                        <td>1949</td>
+                    </tr>
+                    <!-- Agrega más filas según necesites -->
+                </tbody>
+            </table>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+        <h2>          </h2>
+        <h2>Formulario</h2>
+        <h2>          </h2>
+        <form action="procesar_formulario.php" method="POST">
+            <!-- Campo de texto para letras mayúsculas y espacios -->
+            <label for="nombre">Nombre (solo letras mayúsculas y espacios, máximo 30 caracteres):</label><br>
+            <input type="text" id="nombre" name="nombre" pattern="[A-Z\s]{1,30}" title="Ingrese solo letras mayúsculas y espacios, máximo 30 caracteres" required><br><br>
+    
+            <!-- Campo numérico con tres fracciones decimales -->
+            <label for="numero">Número (máximo 3 decimales):</label><br>
+            <input type="number" id="numero" name="numero" step="0.001" required><br><br>
+    
+            <!-- Campo de tipo email -->
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <!-- Campo de tipo fecha -->
+            <label for="fecha">Fecha:</label><br>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+    
+            <!-- Campo de texto con patrón regex -->
+            <label for="campo_patron">Campo con patrón regex (4 letras mayúsculas + 4 dígitos + @, # o % al final):</label><br>
+            <input type="text" id="campo_patron" name="campo_patron" pattern="[A-Z]{4}\d{4}[@#%]" title="Ingrese 4 letras mayúsculas, seguidas de 4 dígitos y al final @, # o %" required><br><br>
+    
+            <!-- Botón de envío -->
+            <input type="submit" value="Enviar">
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <aside>
+        <div id="clock"></div>
+        <div id="date"></div>
+        <a href="pagina_seleccionada.html">
+            <img src="imagen_vinculo.jpg" alt="Enlace a página seleccionada">
+        </a>
+        <p><a href="https://www.otro_sitio.com">Enlace a otro sitio de internet</a></p>
+    </aside>
+    <footer>
+        <!-- Colocar información de derechos de autor, etc. -->
+    </footer>
+</body>
+</html>
+
+<div class="footer">
+    <h3>Contacto</h3>
+    <p>Nombre: RAMIREZ PACHECO HASSEM HERVEY</p>
+    <p>Email: l20200344@pachuca.tecnm.mx</p>
+    <p>Teléfono: 7721147292</p>
+    
+</div>
